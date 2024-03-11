@@ -4,6 +4,7 @@ public abstract class Flower {
     protected double price;
     protected double neededArea;
     protected double chanceOfGrowth;
+    protected boolean grown;
 
     @Override
     public String toString() {
