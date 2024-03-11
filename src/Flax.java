@@ -9,7 +9,7 @@ public class Flax extends Flower{
     }
 
     public void seed(){
-        Flax flax = new Flax("Flax", 120, 1, 6,false);
+        Flax flax = new Flax("Flax", 120, 14, 6,false);
     }
 
     @Override
