@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Barn {
     protected int bigAn;
@@ -31,12 +32,17 @@ public class Barn {
         return " ";
     }
 
-    public void stroke(){
-
+    public String stroke(){
+        System.out.println("Which animal would you like to stroke? (name)");
+        System.out.println(animals);
+        Scanner sc = new Scanner(System.in);
+        String anim = sc.next();
+        return "You stroked animal  " + anim;
     }
 
-    public void sell(){
-
+    public String sell(Animal an){
+        animals.remove(an);
+        return "You sold this animal  " + an.type + " " + an.name;
     }
 
 
