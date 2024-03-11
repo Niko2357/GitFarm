@@ -1,10 +1,8 @@
+import java.util.ArrayList;
+
 public class Farm {
-
-
-    public void plant(){
-
-    }
-
+    protected String owner;
+    protected ArrayList<Animal> animals;
 
 
 }
