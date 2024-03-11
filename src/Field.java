@@ -19,12 +19,23 @@ public class Field {
         } else{
             System.out.println("You cannot plant right now. You reached maximum number of plants or run out of space.");
         }
+        if(fl.chanceOfGrowth < 5){
+            fl.grown = false;
+        }else if(fl.chanceOfGrowth > 5){
+            fl.grown = true;
+        }
     }
 
     public String water(Flower fl){
         fl.chanceOfGrowth += 3;
+        if(fl.chanceOfGrowth < 5){
+            fl.grown = false;
+        }else if(fl.chanceOfGrowth > 5){
+            fl.grown = true;
+        }
         return "You watered flower  " + fl.name;
     }
+
 
     public String harvest(Flower fl){
         if(fl.grown){
